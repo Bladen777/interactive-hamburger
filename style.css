@@ -1,0 +1,87 @@
+.ham_int_dropdown_btn{
+  border:none;
+  background-color:transparent;
+  width:2rem;
+  cursor:pointer;
+  box-shadow:none;
+}
+
+.ham_int_dropdown_btn >*{
+  margin:3px 0;
+  border:solid blue 2px;
+  transition-duration:0.5s;
+  border-radius:1rem;
+}
+
+.ham_int_dropdown_btn:hover >*{
+  border-color:red;
+}
+
+.ham_left_move{
+  transform:rotate(60deg); 
+  translate:-.3rem 0rem;
+}
+
+.ham_right_move{
+  transform:rotate(-60deg); 
+  translate:.28rem -.4rem;
+}
+
+.ham_int_dropdown_content{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  background-color:cadetblue;
+  width:max-content;
+  height:max-content;
+  transition:opacity 0.5s;
+  opacity:0;
+}
+
+.show{
+  transition:opacity 0.5s;
+  opacity:1;
+}
+
+.hide{
+  transition:opacity 0.5;
+  opacity:0;
+}
+
+}
+.drop_down_link a:link, .drop_down_link a:visited{
+  z-index:1;
+  text-decoration:none;
+  color:blue;
+  transition:0.5s;
+}
+
+.drop_down_link a:hover{
+  color:red;
+}
+
+
+
+.drop_down_link{
+position:relative;  
+  
+margin:1rem;  
+padding:4rem;  
+}
+
+.link_bg_1{
+  position:absolute;
+  top:0; left:0;
+  background-image:url("https://static.vecteezy.com/packs/media/vectors/term-bg-1-3d6355ab.jpg");
+  background-size:100%;
+}
+
+.link_3{
+    background-image:url("https://static.vecteezy.com/packs/media/vectors/term-bg-1-3d6355ab.jpg");
+  background-size:100%;
+  opacity:0;
+}
+
+.drop_down_link a{
+  opacity:1 !important;
+}
